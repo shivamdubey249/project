@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+
+
+{% extends  'ExamApp/base.html'%}
+
+
+{% block parentblock%}
+<h1>SignUp Form</h1>
+   <form method="post">
+   {{sform.as_p}}
+   {%csrf_token%}
+<input type="submit" value="Register" />
+</form>
+
+
+
+{%endblock%}
